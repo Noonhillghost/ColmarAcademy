@@ -8,6 +8,24 @@ body    {
     letter-spacing: 1px;
     font-size: 1rem;
 }
+header  {
+    padding: 1rem 1.5rem;
+}
+#desktop    {
+    display: flex;
+    align-items: center;
+}
+header  .logo   {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+header .logo img    {
+    margin-right: 0.5rem;
+}
+strong  {
+    font-weight: bold;
+}
 /* Old Code
 header   {
     display: flex;
@@ -250,12 +268,29 @@ a   {
 .media-container video    {
     display: block;
 }
+#thesis-section {
+    padding: 2rem 0;
+}
 #thesis-section #main-content   {
     padding-bottom: 0%;
+}
+#thesis-section h2  {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
 #thesis-section h3  {
     padding: 5rem 0;
     font-weight: bold;
+}
+.flex-content   {
+    display: flex;
+padding: 0 1.5rem;
+}
+.flex-content .main-content {
+    width: 60%;
+    padding: 2rem 1.5rem 2rem 0;
 }
 .flex-content .supporting-content   {
     display: flex;
@@ -271,6 +306,9 @@ a   {
 .content-image-box .media-container     {
     width: 35%;
 }
+.media-container    {
+    overflow: hidden;
+}
 .media-container img    {
     display: block;
     width: 100%;
@@ -285,6 +323,23 @@ a   {
 .content-image-box:last-child   {
     padding-bottom: 0;
     border-bottom: 0;
+}
+.content-image-box h4   {
+    padding-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.content-image-box p    {
+    padding-bottom: 0.5rem;
+}
+.footer {
+    display: flex;
+    padding: 1rem 1.5rem;
+    font-size: 0.75rem;
+    color: rgb(112, 112, 112);
+}
+.footer .copyright  {
+    flex-grow: 1;
 }
 
 /* Old Code
