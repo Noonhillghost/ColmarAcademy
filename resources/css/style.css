@@ -42,7 +42,7 @@ nav {
     align-items: center;
     position: relative;
     background-color: whitesmoke;
-    line-height: 64px;
+    line-height: 32px;
 }
 nav ul  {
     margin: 0px;
@@ -87,31 +87,39 @@ a{
 .banner {
     display: flex;
     justify-content: center;
-    padding-top: 64px;
+    padding-top: 32px;
     height: auto;
     width: auto;
-    background-color: rgb(109, 121, 147);
+    background-color: #dadce0;
 }
-#left-banner img    {
+#left-banner   {
     display: inline-block;;
-    width: 606px;
+    width: 60%;
     height: inherit;
     margin: 32px 24px;
 }
+#left-banner img    {
+    width: 100%;
+}
 #right-banner     {
     display: inline-block;
-    overflow: hidden;
-    margin: 32px auto;
-    color: whitesmoke;
+    width: 40%;
+    margin: auto;
+    font-size: 1.5rem;
+    padding-left: 24px;
+    line-height: 1.5;
+    align-items: center;
+    color: #2e3138
     font-weight: 300;
-    text-transform: uppercase;
 }
 button  {
     display: block;
     color: whitesmoke;
-    text-transform: uppercase;
+    width: 250px;
     background-color: rgb(49,56,51);
-    padding: 10px;
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-size: 1.25rem;
     font-weight: 100;
     border-radius: 5px;
@@ -120,6 +128,165 @@ button  {
 button p :hover   {
     color: orange;
 }
+#container-info {
+    display: flex;
+    background-color: whitesmoke;
+    padding-top: 64px;
+}
+#info-left  {
+    margin: 32px 24px;
+    width: 60%;
+}
+#info-left img  {
+    width: 100%;
+    overflow: hidden;
+}
+#info-left h1   {
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+#info-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 32px;
+}
+#info-right a   {
+    text-decoration: none;
+    color: inherit;
+}
+.info-first img {
+    display: block;
+    float: left;
+    width: 35%;
+    align-items: baseline;
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+}
+.info-second img    {
+    display: block;
+    float: left;
+    overflow: auto;
+    width: 35%;
+    align-items: baseline;
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+}
+.info-third img {
+    display: block;
+    float: left;
+    overflow: auto;
+    width: 35%;
+    align-items: baseline;
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+}
+
+/*Courses-Section*/
+
+#courses-section    {
+    padding: 2rem 3.5rem;
+    background-color: rgb(245, 245, 245);
+}
+#courses-section h2    {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.courses-row    {
+    display: flex;
+}
+.course     {
+    flex-basis: 33%;
+    margin: 1rem;
+    background-color: whitesmoke;
+}
+a   {
+    text-decoration: none;
+    color: inherit;
+}
+.text-content   {
+    padding: 1rem 1rem 1.5rem 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+.media-container    {
+    overflow: hidden;
+}
+.media-container img    {
+    display: block;
+    width: 100%;
+}
+/*Thesis Section*/
+#thesis-section {
+    padding: 2rem 0;
+}
+#thesis-section h2  {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.flex-content   {
+    display: flex;
+    padding: 0 1.5rem;
+}
+.flex-content .main-content {
+    width: 60%;
+    padding: 2rem 1.5rem 2rem 0;
+    border-right: 1px solid rgb(245, 245, 245);
+}
+.main-content .media-container  {
+    overflow: hidden;
+}
+.media-container video    {
+    display: block;
+}
+#thesis-section #main-content   {
+    padding-bottom: 0%;
+}
+#thesis-section h3  {
+    padding: 5rem 0;
+    font-weight: bold;
+}
+.flex-content .supporting-content   {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem 0;
+}
+.content-image-box  {
+    display: flex;
+    padding: 1rem 0 1rem 1rem;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+.content-image-box .media-container     {
+    width: 35%;
+}
+.media-container img    {
+    display: block;
+    width: 100%;
+}
+.content-image-box .text-content    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding: 0 0.75rem 0 1rem;
+}
+.content-image-box:last-child   {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
 /* Old Code
 container-left  {
     display: block;
